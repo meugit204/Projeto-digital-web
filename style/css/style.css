@@ -5,4 +5,31 @@ body {
   background-color: var(--cor-primaria);
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 1fr var(--max-width-container) 1fr;
+}
+body header {
+  justify-content: center;
+  border: 1px solid red;
+}
+body header .logo a {
+  color: var(cor-texto-preto);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+body header .menu .menu__item {
+  display: flex;
+  align-items: center;
+}
+body header .menu .menu__item .menu__link {
+  color: var(--cor-texto-preto);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
 }
