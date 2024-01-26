@@ -12,18 +12,21 @@ body {
   background-color: var(--cor-primaria);
   display: grid;
   grid-template-areas:
-    "header header header"
-    "main main main"
+    ". header ."
+    ". main ."
     "footer footer footer";
   grid-template-columns: 1fr var(--max-width-container) 1fr;
 
   header {
-    justify-content: center;
-    border: 1px solid red;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5px;
 
     .logo {
       a {
-        color: var(cor-texto-preto);
+        color: var(--cor-texto-preto);
         font-family: "Open Sans";
         font-size: 20px;
         font-style: normal;
@@ -37,6 +40,7 @@ body {
       .menu__item {
         display: flex;
         align-items: center;
+        gap: 30px;
 
         .menu__link {
           color: var(--cor-texto-preto);
@@ -47,7 +51,72 @@ body {
           line-height: normal;
           text-transform: capitalize;
         }
+
+        .orcamento {
+          border: 1px solid #ccc;
+          padding: 10px;
+          border-radius: 10px;
+          margin-left: -10px;
+        }
       }
     }
+  }
+
+  main {
+    grid-area: main;
+
+    .chamada__container {
+      display: flex;
+      margin-top: 80px;
+
+      .chamada {
+        padding: 30px 5px;
+
+        .chamada__title {
+          h1 {
+            color: var(--cor-texto-preto);
+            font-family: "Open Sans";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+          }
+        }
+        .chamada__btn {
+          margin-top: 80px;
+
+          a {
+            padding: 20px 60px;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--cor-btn-preto);
+            color: var(--cor-texto-branco);
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .empresas {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      flex-wrap: wrap;
+
+      .empresa__logo {
+        width: 150px;
+        height: 40px;
+      }
+    }
+  }
+
+  footer {
+    grid-area: footer;
   }
 }

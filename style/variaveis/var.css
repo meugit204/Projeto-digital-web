@@ -1,7 +1,7 @@
 /* cores do projeto */
 :root {
   --cor-primaria: #fff; /* Branco */
-  --cor-secundaria: #95AD0D; /* Verde */
+  --cor-secundaria: #95ad0d; /* Verde */
   --cor-terciaria: #27ae60; /* Verde */
   --cor-texto-preto: #000; /* Preto */
   --cor-texto-branco: #fff; /* Branco */
@@ -13,9 +13,17 @@
   --cor-borda: #ddd; /* Cinza claro para bordas */
   --cor-gradiente-inicio: #3498db; /* Início de gradiente azul */
   --cor-gradiente-fim: #2980b9; /* Fim de gradiente azul */
+  --cor-btn-preto: #000; /* Preto */
 }
 
 /* Tamanho do container padrao da pagina */
 :root {
   --max-width-container: 1200px;
+}
+
+.w50 {
+  width: 50%;
+}
+img {
+  width: 100%;
 }
