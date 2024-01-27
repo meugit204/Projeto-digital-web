@@ -43,27 +43,41 @@ body header .menu .menu__item .orcamento {
   border-radius: 10px;
   margin-left: -10px;
 }
+@media screen and (max-width: 760px) {
+  body header .menu {
+    display: none;
+  }
+}
 body main {
   grid-area: main;
 }
 body main .chamada__container {
   display: flex;
-  margin-top: 80px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 body main .chamada__container .chamada {
-  padding: 30px 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body main .chamada__container .chamada .chamada__title h1 {
   color: var(--cor-texto-preto);
   font-family: "Open Sans";
-  font-size: 60px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: capitalize;
 }
+@media screen and (max-width: 760px) {
+  body main .chamada__container .chamada .chamada__title h1 {
+    text-align: center;
+  }
+}
 body main .chamada__container .chamada .chamada__btn {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 body main .chamada__container .chamada .chamada__btn a {
   padding: 20px 60px;
@@ -79,16 +93,48 @@ body main .chamada__container .chamada .chamada__btn a {
   text-transform: capitalize;
   cursor: pointer;
 }
+@media screen and (max-width: 760px) {
+  body main .chamada__container .chamada .chamada__btn {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  body main .chamada__container .chamada {
+    width: 100%;
+  }
+}
+body main .chamada__container .imagem .imagem__container img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width: 760px) {
+  body main .chamada__container .imagem {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  body main .chamada__container {
+    flex-direction: column-reverse;
+  }
+}
 body main .empresas {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 80px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 body main .empresas .empresa__logo {
-  width: 150px;
-  height: 40px;
+  min-width: 130px;
+  height: 30px;
 }
 body footer {
   grid-area: footer;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    grid-template-columns: 1fr;
+  }
 }

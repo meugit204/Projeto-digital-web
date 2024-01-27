@@ -59,6 +59,9 @@ body {
           margin-left: -10px;
         }
       }
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
     }
   }
 
@@ -67,24 +70,33 @@ body {
 
     .chamada__container {
       display: flex;
-      margin-top: 80px;
+      margin-top: 40px;
+      flex-wrap: wrap;
 
       .chamada {
-        padding: 30px 5px;
+        padding: 0px 5px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
 
         .chamada__title {
           h1 {
             color: var(--cor-texto-preto);
             font-family: "Open Sans";
-            font-size: 60px;
+            font-size: 40px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
             text-transform: capitalize;
+            @media screen and (max-width: 760px) {
+              text-align: center;
+            }
           }
         }
+
         .chamada__btn {
-          margin-top: 80px;
+          margin-top: 40px;
 
           a {
             padding: 20px 60px;
@@ -100,23 +112,49 @@ body {
             text-transform: capitalize;
             cursor: pointer;
           }
+          @media screen and (max-width: 760px) {
+            text-align: center;
+          }
         }
+        @media screen and (max-width: 760px) {
+          width: 100%;
+        }
+      }
+      .imagem {
+        .imagem__container {
+          img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+        @media screen and (max-width: 760px) {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        flex-direction: column-reverse;
       }
     }
     .empresas {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-top: 80px;
+      gap: 20px;
       flex-wrap: wrap;
 
       .empresa__logo {
-        width: 150px;
-        height: 40px;
+        min-width: 130px;
+        height: 30px;
       }
     }
   }
 
   footer {
     grid-area: footer;
+  }
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 }
