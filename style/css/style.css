@@ -178,6 +178,34 @@ body main .empresas .empresa__logo img {
     width: 100%;
   }
 }
+body main .servicos {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  gap: 20px;
+  padding: 0 1%;
+}
+body main .servicos h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+body main .servicos p {
+  color: #373535;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  max-width: 450px;
+}
 body footer {
   grid-area: footer;
 }
