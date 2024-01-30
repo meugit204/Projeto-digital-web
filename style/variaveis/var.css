@@ -27,3 +27,49 @@
 img {
   width: 100%;
 }
+.title-card-servico {
+  color: var(--cor-texto-preto);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  display: inline-block;
+}
+.title-bg-black {
+  color: var(--cor-texto-preto);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--cor-primaria);
+  padding: 5px 10px;
+  display: inline-block;
+}
+.saber-mais-servico {
+  color: #8a8787;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.box__saiba__mais > span:first-child {
+  font-size: 40px;
+  color: var(--cor-texto-preto);
+}
+#cor-black {
+  font-size: 40px;
+  color: var(--cor-texto-branco);
+}
+.bg-black {
+  background-color: var(--cor-texto-preto);
+}
+.reverse {
+  flex-direction: row-reverse;
+}
