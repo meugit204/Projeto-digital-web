@@ -63,9 +63,19 @@ img {
   font-size: 40px;
   color: var(--cor-texto-preto);
 }
+@media screen and (max-width: 760px) {
+  .box__saiba__mais > span:first-child {
+    font-size: 20px;
+  }
+}
 #cor-black {
   font-size: 40px;
   color: var(--cor-texto-branco);
+}
+@media screen and (max-width: 760px) {
+  #cor-black {
+    font-size: 20px;
+  }
 }
 .bg-black {
   background-color: var(--cor-texto-preto);

@@ -232,6 +232,7 @@ body {
     .servicos-container {
       display: flex;
       margin-top: 80px;
+      padding: 0 2%;
       gap: 40px;
 
       .servicos__box01 {
@@ -252,6 +253,16 @@ body {
             gap: 10px;
           }
         }
+        @media screen and (max-width: 760px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 760px) {
+          padding: 20px;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
