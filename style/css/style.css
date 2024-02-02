@@ -163,19 +163,27 @@ body main .chamada__container .imagem .imagem__container img {
 body main .empresas {
   display: flex;
   margin-top: 80px;
-  min-width: 320px;
+  justify-content: space-between;
+  gap: 80px;
 }
 body main .empresas .empresa__logo {
   width: 20%;
-  height: 10px;
-  border: 20px solid var(--cor-primaria);
 }
 body main .empresas .empresa__logo img {
-  width: 80%;
+  width: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 760px) {
-  body main .empresas .empresa__logo img {
+  body main .empresas {
     width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  body main .empresas {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 body main .servicos {
@@ -245,11 +253,11 @@ body main .servicos-container .servicos__box01 .box__wrap .box__saiba__mais {
     align-items: center;
   }
 }
-body .proposta {
-  margin-top: 40px;
+body main .proposta {
+  margin-top: 80px;
   padding: 0 2%;
 }
-body .proposta .proposta__container {
+body main .proposta .proposta__container {
   display: flex;
   align-items: center;
   border-radius: 40px;
@@ -257,12 +265,12 @@ body .proposta .proposta__container {
   padding: 10px 30px;
   height: 300px;
 }
-body .proposta .proposta__container .proposta__box {
+body main .proposta .proposta__container .proposta__box {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-body .proposta .proposta__container .proposta__box h3 {
+body main .proposta .proposta__container .proposta__box h3 {
   color: #000;
   font-family: "Open Sans";
   font-size: 27px;
@@ -270,7 +278,7 @@ body .proposta .proposta__container .proposta__box h3 {
   font-weight: 700;
   line-height: normal;
 }
-body .proposta .proposta__container .proposta__box p {
+body main .proposta .proposta__container .proposta__box p {
   color: #373535;
   font-family: "Open Sans";
   font-size: 14px;
@@ -278,7 +286,7 @@ body .proposta .proposta__container .proposta__box p {
   min-width: 320px;
   max-width: 380px;
 }
-body .proposta .proposta__container .proposta__box .box__btn a {
+body main .proposta .proposta__container .proposta__box .box__btn a {
   color: #fff;
   font-family: "Open Sans";
   font-size: 20px;
@@ -291,42 +299,80 @@ body .proposta .proposta__container .proposta__box .box__btn a {
   border-radius: 20px;
 }
 @media screen and (max-width: 413px) {
-  body .proposta .proposta__container .proposta__box .box__btn a {
+  body main .proposta .proposta__container .proposta__box .box__btn a {
     font-size: 16px;
     padding: 10px 20px;
   }
 }
 @media screen and (max-width: 760px) {
-  body .proposta .proposta__container .proposta__box {
+  body main .proposta .proposta__container .proposta__box {
     width: 90%;
   }
 }
-body .proposta .proposta__container .proposta__img {
+body main .proposta .proposta__container .proposta__img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .proposta .proposta__container .proposta__img .img__container {
+body main .proposta .proposta__container .proposta__img .img__container {
   width: 369px;
   height: 209px;
 }
 @media screen and (max-width: 760px) {
-  body .proposta .proposta__container .proposta__img {
+  body main .proposta .proposta__container .proposta__img {
     display: none;
   }
 }
 @media screen and (max-width: 760px) {
-  body .proposta .proposta__container {
+  body main .proposta .proposta__container {
     height: auto;
   }
 }
 @media screen and (max-width: 760px) {
-  body .proposta .proposta__container {
+  body main .proposta .proposta__container {
     padding: 30px;
+  }
+}
+body main .info {
+  margin-top: 40px;
+}
+body main .info .container-info {
+  display: flex;
+  background-color: var(--cor-fundo-preto);
+  border-radius: 40px;
+}
+body main .info .container-info .box__info {
+  padding: 60px 30px;
+  position: relative;
+}
+body main .info .container-info .box__info p {
+  color: var(--cor-texto-branco);
+}
+body main .info .container-info .box__info a {
+  color: var(--cor-secundaria);
+  display: block;
+  margin-top: 30px;
+}
+@media screen and (max-width: 760px) {
+  body main .info .container-info .box__info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  body main .info .container-info {
+    flex-direction: column;
+    border-radius: 0;
   }
 }
 body footer {
   grid-area: footer;
+  margin-top: 40px;
+}
+body footer .footer__copyright {
+  padding: 3px 0;
+}
+body footer .footer__copyright p {
+  text-align: center;
 }
 @media screen and (max-width: 1200px) {
   body {

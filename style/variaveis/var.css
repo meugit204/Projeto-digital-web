@@ -6,6 +6,7 @@
   --cor-texto-preto: #000; /* Preto */
   --cor-texto-branco: #fff; /* Branco */
   --cor-fundo: #f5f5f5; /* Cinza claro */
+  --cor-fundo-preto: #000;
   --cor-link: #1e90ff; /* Azul mais escuro para links */
   --cor-hover: #ff4500; /* Laranja para efeitos hover */
   --cor-destaque: #ffcc00; /* Amarelo para destaque */
@@ -82,4 +83,32 @@ img {
 }
 .reverse {
   flex-direction: row-reverse;
+}
+.barra::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 90%;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.barra::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 90%;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 760px) {
+  .barra::before,
+  .barra::after {
+    display: none;
+  }
 }

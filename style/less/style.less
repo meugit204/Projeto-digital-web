@@ -182,21 +182,29 @@ body {
         flex-direction: column-reverse;
       }
     }
+    // empresas
     .empresas {
       display: flex;
       margin-top: 80px;
-      min-width: 320px;
+      justify-content: space-between;
+      gap: 80px;
 
       .empresa__logo {
         width: 20%;
-        height: 10px;
-        border: 20px solid var(--cor-primaria);
+
         img {
-          width: 80%;
-          @media screen and (max-width: 760px) {
-            width: 100%;
-          }
+          width: 100%;
+          object-fit: cover;
         }
+      }
+      @media screen and (max-width: 760px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 760px) {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
       }
     }
     // servicos
@@ -265,84 +273,120 @@ body {
         align-items: center;
       }
     }
-  }
-  // proposta
-  .proposta {
-    margin-top: 40px;
-    padding: 0 2%;
-    .proposta__container {
-      display: flex;
-      align-items: center;
-      border-radius: 40px;
-      background: #f2f2f2;
-      padding: 10px 30px;
-      height: 300px;
-      .proposta__box {
+    // proposta
+    .proposta {
+      margin-top: 80px;
+      padding: 0 2%;
+      .proposta__container {
         display: flex;
-        flex-direction: column;
-        gap: 40px;
+        align-items: center;
+        border-radius: 40px;
+        background: #f2f2f2;
+        padding: 10px 30px;
+        height: 300px;
+        .proposta__box {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
 
-        h3 {
-          color: #000;
-          font-family: "Open Sans";
-          font-size: 27px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-        p {
-          color: #373535;
-          font-family: "Open Sans";
-          font-size: 14px;
-          text-transform: capitalize;
-          min-width: 320px;
-          max-width: 380px;
-        }
-        .box__btn {
-          a {
-            color: #fff;
+          h3 {
+            color: #000;
             font-family: "Open Sans";
-            font-size: 20px;
+            font-size: 27px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+          }
+          p {
+            color: #373535;
+            font-family: "Open Sans";
+            font-size: 14px;
             text-transform: capitalize;
-            background-color: #000;
-            padding: 10px 30px;
-            border-radius: 20px;
-            @media screen and (max-width: 413px) {
-              font-size: 16px;
-              padding: 10px 20px;
+            min-width: 320px;
+            max-width: 380px;
+          }
+          .box__btn {
+            a {
+              color: #fff;
+              font-family: "Open Sans";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              text-transform: capitalize;
+              background-color: #000;
+              padding: 10px 30px;
+              border-radius: 20px;
+              @media screen and (max-width: 413px) {
+                font-size: 16px;
+                padding: 10px 20px;
+              }
             }
+          }
+          @media screen and (max-width: 760px) {
+            width: 90%;
+          }
+        }
+        .proposta__img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .img__container {
+            width: 369px;
+            height: 209px;
+          }
+          @media screen and (max-width: 760px) {
+            display: none;
           }
         }
         @media screen and (max-width: 760px) {
-          width: 90%;
-        }
-      }
-      .proposta__img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .img__container {
-          width: 369px;
-          height: 209px;
+          height: auto;
         }
         @media screen and (max-width: 760px) {
-          display: none;
+          padding: 30px;
         }
       }
-      @media screen and (max-width: 760px) {
-        height: auto;
-      }
-      @media screen and (max-width: 760px) {
-        padding: 30px;
+    }
+    // info
+    .info {
+      margin-top: 40px;
+      .container-info {
+        display: flex;
+        background-color: var(--cor-fundo-preto);
+        border-radius: 40px;
+
+        .box__info {
+          padding: 60px 30px;
+          position: relative;
+          p {
+            color: var(--cor-texto-branco);
+          }
+          a {
+            color: var(--cor-secundaria);
+            display: block;
+            margin-top: 30px;
+          }
+          @media screen and (max-width: 760px) {
+            text-align: center;
+          }
+        }
+        @media screen and (max-width: 760px) {
+          flex-direction: column;
+          border-radius: 0;
+        }
       }
     }
   }
 
   footer {
     grid-area: footer;
+    margin-top: 40px;
+    .footer__copyright {
+      padding: 3px 0;
+      p {
+        text-align: center;
+      }
+    }
   }
   @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr;
