@@ -3,25 +3,11 @@ LINK DO PROJETO DESENVOLVIDO: https://meugit204.github.io/Projeto-digital-web/
 # Título do Projeto: Digital Web
 
 ## Descrição do Projeto:
-Bem-vindo ao meu portfólio pessoal! Aqui, compartilho um pouco sobre quem sou, meus projetos e meu percurso no mundo do desenvolvimento web. Este projeto reflete meu atual nível de conhecimento em HTML, CSS, e JavaScript, demonstrando o que aprendi até o momento.
+Neste repositório, apresento meu projeto de um site para uma agência digital web, desenvolvido com foco em design moderno e funcionalidades avançadas. Utilizei tecnologias como HTML5, CSS3, JavaScript e frameworks como Bootstrap para criar uma experiência de usuário envolvente e responsiva. A estrutura do site foi pensada para destacar os serviços oferecidos pela agência, com seções intuitivas e navegação fluida. Além disso, integrei animações suaves e efeitos interativos para enriquecer a interação do usuário com a página. Este projeto reflete meu comprometimento com práticas de desenvolvimento web atualizadas, garantindo uma presença digital impactante para a agência. Explore o código-fonte para entender as escolhas de design e implementação, e fique à vontade para contribuir ou dar feedback!
 
-### Página Inicial
-Na página inicial, você encontrará uma seção dedicada a conhecer um pouco mais sobre mim. Além disso, disponibilizei meu currículo para download, permitindo que os visitantes tenham acesso rápido às informações relevantes sobre minha experiência e habilidades.
-
-### Navegação Intuitiva
-A facilidade de navegação é uma prioridade. Implementei links que direcionam os visitantes para diferentes seções do projeto, tornando a exploração do meu portfólio simples e intuitiva. Esses links são estrategicamente posicionados para proporcionar uma experiência de usuário fluida.
-
-### Página de Projetos
-A seção de projetos destaca algumas das realizações que alcancei durante meu curso na Danki Code e na minha faculdade de Tecnologia em Desenvolvimento Web. Todos esses projetos foram desenvolvidos por mim, utilizando HTML, CSS, Less, e JavaScript. A inclusão de projetos do curso e da faculdade reflete meu comprometimento com o aprendizado contínuo e a aplicação prática dos conhecimentos adquiridos.
 
 ### Responsividade
 Um dos aspectos fundamentais deste projeto é sua total responsividade. Independentemente do dispositivo que você está usando, o layout se ajusta de maneira eficiente para proporcionar uma experiência consistente e agradável.
-
-## Tecnologias Utilizadas
-HTML: Estruturação semântica do conteúdo.
-CSS e Less: Estilização e design responsivo.
-JavaScript: Implementação de interatividade e dinamismo.
-Este portfólio é o resultado do meu esforço e dedicação para desenvolver habilidades sólidas em desenvolvimento web. Espero que aproveite a visita! Se houver algo específico que gostaria de discutir ou se precisar de mais informações, sinta-se à vontade para entrar em contato.
 
 Obrigado por explorar meu portfólio!
 
